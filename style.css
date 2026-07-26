@@ -1,0 +1,27 @@
+:root{--bg:#fff;--fg:#1b1b1f;--muted:#6b6b76;--line:#e4e4ea;--accent:#4f46e5}
+@media (prefers-color-scheme:dark){:root{--bg:#131317;--fg:#e9e9ee;--muted:#9a9aa6;--line:#2c2c34;--accent:#a5a0ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",system-ui,sans-serif;
+ -webkit-text-size-adjust:100%}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+h1{font-size:1.75rem;line-height:1.35;margin:0 0 .5rem;letter-spacing:-.02em}
+h2{font-size:1.1rem;margin:2.75rem 0 .75rem;letter-spacing:-.01em}
+p{margin:0 0 1rem}
+a{color:var(--accent)}
+ul{margin:0 0 1rem;padding-left:1.25rem}
+li{margin:.25rem 0}
+hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0}
+.scroll{overflow-x:auto;margin:0 0 1.25rem}
+table{border-collapse:collapse;width:100%;font-size:.925rem;min-width:28rem}
+th,td{border:1px solid var(--line);padding:.6rem .7rem;text-align:left;vertical-align:top}
+th{background:color-mix(in srgb,var(--fg) 5%,transparent);font-weight:600}
+.lead{color:var(--muted);font-size:.9rem;margin-bottom:2rem}
+footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+
+/* 프로젝트 목록 (index) */
+.projects{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:.75rem}
+.projects a{display:block;border:1px solid var(--line);border-radius:.75rem;padding:1rem 1.1rem;
+ text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.projects a:hover{border-color:var(--accent);transform:translateY(-1px)}
+.projects strong{display:block;font-size:1.05rem;margin-bottom:.2rem}
+.projects span{color:var(--muted);font-size:.9rem}
