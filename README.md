@@ -21,7 +21,10 @@ Abilit의 경우 원본은 `Abilit/docs/legal/privacy-ko.md` 입니다.
 
 ```bash
 cp ~/dev/Abilit/docs/legal/site/*.html abilit/ && git add -A && git commit -m "abilit: 방침 갱신" && git push
+cp ~/dev/noname-2/docs/legal/site/*.html yarr/ && git add -A && git commit -m "yarr: 방침 갱신" && git push
 ```
+
+Yarr의 원본은 `noname-2/docs/legal/{privacy-en,privacy-ko,support}.md` 이고, 앱의 링크 상수는 `Sources/App/AppLinks.swift` 입니다.
 
 ## 주의
 
