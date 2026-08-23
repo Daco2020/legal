@@ -26,6 +26,12 @@ cp ~/dev/noname-2/docs/legal/site/*.html yarr/ && git add -A && git commit -m "y
 
 Yarr의 원본은 `noname-2/docs/legal/{privacy-en,privacy-ko,support}.md` 이고, 앱의 링크 상수는 `Sources/App/AppLinks.swift` 입니다.
 
+그은곳(Hitosuji)의 원본은 `bookcard/docs/legal/*.md`, 빌드 결과는 `bookcard/docs/legal/site/`, 앱의 링크 상수는 `App/Core/Store/AppLinks.swift` 입니다.
+
+```bash
+cp ~/bookcard/docs/legal/site/*.html hitosuji/ && git add -A && git commit -m "hitosuji: 방침 갱신" && git push
+```
+
 ## 주의
 
 이 URL은 **App Store 심사 필수 항목**입니다. 404가 나면 앱이 스토어에서 내려갑니다.
