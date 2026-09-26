@@ -36,3 +36,5 @@ cp ~/bookcard/docs/legal/site/*.html hitosuji/ && git add -A && git commit -m "h
 
 이 URL은 **App Store 심사 필수 항목**입니다. 404가 나면 앱이 스토어에서 내려갑니다.
 경로를 바꾸면 앱의 `AbilitShared/AppLinks.swift`도 같이 고쳐야 합니다.
+
+돌멩이군의 원본은 `dolmengikun/docs/legal/privacy-ko.md`, 빌드 결과는 `dolmengikun/docs/legal/site/`, 웹의 링크 상수는 `src/lib/links.ts` 입니다.
