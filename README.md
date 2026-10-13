@@ -38,3 +38,5 @@ cp ~/bookcard/docs/legal/site/*.html hitosuji/ && git add -A && git commit -m "h
 경로를 바꾸면 앱의 `AbilitShared/AppLinks.swift`도 같이 고쳐야 합니다.
 
 돌멩이군의 원본은 `dolmengikun/docs/legal/privacy-ko.md`, 빌드 결과는 `dolmengikun/docs/legal/site/`, 웹의 링크 상수는 `src/lib/links.ts` 입니다.
+
+Hadaho(피부 보정)의 원본은 `camera/docs/legal/{privacy-ko,support-ko}.md`, 빌드 결과는 `camera/docs/legal/site/`, 앱의 링크 상수는 `App/Sources/Settings/AppLinks.swift` 입니다.
