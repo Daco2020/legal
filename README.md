@@ -40,3 +40,5 @@ cp ~/bookcard/docs/legal/site/*.html hitosuji/ && git add -A && git commit -m "h
 돌멩이군의 원본은 `dolmengikun/docs/legal/privacy-ko.md`, 빌드 결과는 `dolmengikun/docs/legal/site/`, 웹의 링크 상수는 `src/lib/links.ts` 입니다.
 
 Hadaho(피부 보정)의 원본은 `camera/docs/legal/{privacy,support}-{ko,ja,en}.md`, 빌드 결과는 `camera/docs/legal/site/`, 앱의 링크 상수는 `App/Sources/Settings/AppLinks.swift` 입니다.
+
+띵노트의 원본은 `ttingnote-ios/docs/legal/{privacy-ko,support-ko}.md`, 앱의 링크 상수는 `App/Sources/Store/PaywallView.swift` 의 `Legal` 입니다.
