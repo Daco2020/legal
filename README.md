@@ -48,3 +48,10 @@ Hadaho(피부 보정)의 원본은 `camera/docs/legal/{privacy,support}-{ko,ja,e
 ```bash
 cp ~/dev/weather-alarm/docs/legal/site/*.html soram/ && git add -A && git commit -m "soram: 방침 갱신" && git push
 ```
+
+Lovelore의 원본은 `love-language/docs/legal/{privacy-ko,support-ko}.md`, 빌드 결과는 `love-language/docs/legal/site/`, 앱의 링크는 `app/Lovelore/Info.plist` 의 `LovelorePrivacyURL` 입니다.
+
+```bash
+cp ~/dev/love-language/docs/legal/site/*.html lovelore/ && git add -A && git commit -m "lovelore: 방침 갱신" && git push
+```
+
