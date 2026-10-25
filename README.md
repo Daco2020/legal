@@ -42,3 +42,9 @@ cp ~/bookcard/docs/legal/site/*.html hitosuji/ && git add -A && git commit -m "h
 Hadaho(피부 보정)의 원본은 `camera/docs/legal/{privacy,support}-{ko,ja,en}.md`, 빌드 결과는 `camera/docs/legal/site/`, 앱의 링크 상수는 `App/Sources/Settings/AppLinks.swift` 입니다.
 
 띵노트의 원본은 `ttingnote-ios/docs/legal/{privacy-ko,support-ko}.md`, 앱의 링크 상수는 `App/Sources/Store/PaywallView.swift` 의 `Legal` 입니다.
+
+소람(Soram)의 원본은 `weather-alarm/docs/legal/{privacy,terms,support}-ko.md`, 빌드 결과는 `weather-alarm/docs/legal/site/`, 앱의 링크 상수는 `App/Sources/PaywallView.swift` 의 `termsURL` · `privacyURL` 입니다.
+
+```bash
+cp ~/dev/weather-alarm/docs/legal/site/*.html soram/ && git add -A && git commit -m "soram: 방침 갱신" && git push
+```
