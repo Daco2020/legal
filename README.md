@@ -55,3 +55,5 @@ Lovelore의 원본은 `love-language/docs/legal/{privacy-ko,support-ko}.md`, 빌
 cp ~/dev/love-language/docs/legal/site/*.html lovelore/ && git add -A && git commit -m "lovelore: 방침 갱신" && git push
 ```
 
+
+Wornday의 원본은 `weather-alarm/docs/legal/wornday/*.md`(wardrobe 브랜치), 빌드 결과는 같은 폴더의 `site/`, 앱의 링크 상수는 `App/Sources/PaywallView.swift` 의 `AppLinks` 입니다.
