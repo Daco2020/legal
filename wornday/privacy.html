@@ -18,18 +18,19 @@
 <p>이용자가 기기 설정에서 「앱 개발자와 공유」를 켜 둔 경우, Apple이 앱의 충돌 기록을 이름이나 연락처 없이 회사에 전달할 수 있습니다.</p>
 <p><strong>기기 안에만 저장되는 것</strong>: 그린 그림, 입은 날과 때(아침·낮·저녁), 도시 이름, 그때의 기온과 날씨, 「입어 보니 어땠어요?」에 고른 답, 종이 색, 저장할 그림에 넣을 닉네임. 날씨를 다시 받지 않으려고 최근 여드레 동안 받은 날씨와 마지막 동네의 5km 격자 번호도 기기에 둡니다. 회사는 이 정보를 받지 않습니다.</p>
 <p><strong>수집하지 않는 것</strong>: 이름, 전화번호, 연락처, 정확한 위치(위도·경도), 사진 보관함, 광고 식별자(IDFA), 사용 통계.</p>
-<p>다음은 앱 밖으로 나가지만 회사가 받지 않는 정보입니다.</p>
+<p><strong>회사 서버에 잠시 남는 것</strong>: 날씨를 받을 때 보낸 5km 격자 번호(지난날은 기상 관측소 번호)와 날짜. 누가 보냈는지 알 수 없는 값이지만, 동네를 가리키는 정보라 따로 밝힙니다. App Store에는 「대략적인 위치」로 신고합니다.</p>
+<p>다음은 앱 밖으로 나가는 정보입니다. 날씨 중계 서버 말고는 회사가 받지 않습니다.</p>
 <ul><li><strong>날씨</strong>: 앱은 위치를 기기 안에서 기상청의 5km 격자 번호로 바꾸고, 그 번호(지난날은 가까운 기상 관측소 번호)와 날짜만 회사의 날씨 중계 서버(Cloudflare)에 보냅니다. 중계 서버는 그 값으로 공공데이터포털(apis.data.go.kr)에서 날씨를 받아 돌려줍니다. 위도·경도는 보내지 않습니다. 중계 서버는 같은 격자·같은 시각의 날씨 응답을 최대 7일 보관해 다시 쓰지만, 누가 요청했는지는 남기지 않습니다. 접속 IP는 한 곳에서 요청이 몰리는지 세는 데만 쓰고 저장하지 않습니다.</li><li><strong>도시 이름</strong>: 위치로 도시 이름을 찾을 때 Apple의 지도 서비스를 씁니다. 앱은 대략적인 위치만 요청하고, 위도·경도는 저장하지 않습니다.</li><li><strong>iCloud 동기화(유료)</strong>: 동기화를 쓰면 기록과 그림이 이용자 본인의 iCloud 개인 저장 공간에 저장됩니다. 이 공간은 Apple이 운영하며 회사는 열어 볼 수 없습니다.</li><li><strong>Apple Watch(유료)</strong>: 짝지은 Apple Watch로 사흘 치 날씨와 작은 그림을 보냅니다. 기기끼리 주고받으며 회사를 거치지 않습니다.</li><li><strong>사진 저장</strong>: 이용자가 「사진 앱에 저장」을 누를 때만 그 그림을 사진 앱에 더합니다. 사진 보관함은 읽지 않습니다.</li><li><strong>밑그림 사진</strong>: 이용자가 고른 사진 한 장만 그리는 동안 종이 밑에 깔아 둡니다. 사진은 저장하거나 보내지 않으며, 사진 보관함 전체에는 접근하지 않습니다.</li><li><strong>인앱 결제</strong>: 결제는 Apple이 처리합니다. 회사는 결제 수단 정보를 받지 않습니다.</li><li><strong>알림</strong>: 아침 알림은 기기 안에서 만들어지며 밖으로 나가지 않습니다.</li></ul>
 <h2>2. 처리 목적</h2>
 <ul><li><strong>문의 메일</strong>: 문의에 답하고 앱을 고치기 위해</li><li><strong>충돌 기록</strong>: 앱이 멈추는 원인을 찾아 고치기 위해</li></ul>
 <p>광고, 프로파일링, 이용자 추적에 사용하지 않으며, 어떤 경우에도 판매하지 않습니다.</p>
 <h2>3. 보유 및 이용 기간</h2>
-<div class="scroll"><table><thead><tr><th>항목</th><th>보유 기간</th></tr></thead><tbody><tr><td>문의 메일</td><td>받은 날로부터 1년</td></tr><tr><td>충돌 기록</td><td>Apple이 정한 기간 동안 App Store Connect에서만 봅니다. 회사가 따로 옮겨 보관하지 않습니다</td></tr></tbody></table></div>
+<div class="scroll"><table><thead><tr><th>항목</th><th>보유 기간</th></tr></thead><tbody><tr><td>문의 메일</td><td>받은 날로부터 1년</td></tr><tr><td>충돌 기록</td><td>Apple이 정한 기간 동안 App Store Connect에서만 봅니다. 회사가 따로 옮겨 보관하지 않습니다</td></tr><tr><td>날씨 격자 번호·날짜</td><td>최대 7일. 매일 새벽 지난 것을 지웁니다</td></tr></tbody></table></div>
 <p>기기와 iCloud에 저장된 기록은 회사가 보관하지 않으며, 이용자가 지울 때까지 남습니다.</p>
 <h2>4. 제3자 제공</h2>
 <p><strong>제공하지 않습니다.</strong></p>
 <h2>5. 처리위탁과 국외 이전</h2>
-<div class="scroll"><table><thead><tr><th>수탁자</th><th>위탁 업무</th></tr></thead><tbody><tr><td>Cloudflare, Inc.</td><td>날씨 중계 서버 운영 (보관하는 개인정보 없음)</td></tr><tr><td>Google LLC</td><td>문의 메일 수신·보관 (Gmail)</td></tr></tbody></table></div>
+<div class="scroll"><table><thead><tr><th>수탁자</th><th>위탁 업무</th></tr></thead><tbody><tr><td>Cloudflare, Inc.</td><td>날씨 중계 서버 운영 (격자 번호·날짜를 최대 7일 보관, 요청한 사람은 남기지 않음)</td></tr><tr><td>Google LLC</td><td>문의 메일 수신·보관 (Gmail)</td></tr></tbody></table></div>
 <p><strong>국외 이전</strong>: 회사는 아래와 같이 개인정보를 국외로 이전합니다.</p>
 <div class="scroll"><table><thead><tr><th>이전받는 자 (연락처)</th><th>이전되는 국가</th><th>이전 항목</th></tr></thead><tbody><tr><td>Google LLC (privacy.google.com)</td><td>미국</td><td>문의 메일</td></tr></tbody></table></div>
 <p>이전 방법은 이용자가 메일을 보낼 때 정보통신망을 통한 전송이고, 이전 목적과 보유 기간은 위 제2항·제3항과 같습니다. 국외 이전을 원하지 않으면 메일을 보내지 않으셔도 앱을 쓰는 데 지장이 없습니다.</p>
